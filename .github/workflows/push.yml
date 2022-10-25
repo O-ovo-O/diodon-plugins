@@ -7,10 +7,6 @@ jobs:
     defaults:
       run:
         shell: bash
-    strategy:
-      max-parallel: 1
-      matrix:
-        python-version: ['2.9']
     steps:
     - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
     - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
@@ -21,7 +17,7 @@ jobs:
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v4
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: '2.7'
         cache: 'pip'
     - name: prepare
       run: |
