@@ -13,7 +13,6 @@ jobs:
     - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
     - name: Check out repository code
       uses: actions/checkout@v3
-
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v4
       with:
@@ -24,8 +23,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install --upgrade setuptools
     - name: install depencencies
-    - run: sudo apt-get install valac libgee-0.8-dev diodon-dev
-    - run: echo "🍏 This job's status is ${{ job.status }}."
+      run: sudo apt-get install valac libgee-0.8-dev diodon-dev
+    - name: just an echo
+      run: echo "🍏 This job's status is ${{ job.status }}."
     - name: config
       run: ./waf configure --libdir /usr/lib/x86_64-linux-gnu/
     - name: install
