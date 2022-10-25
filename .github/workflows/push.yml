@@ -23,7 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install --upgrade setuptools
     - name: install depencencies
-      run: sudo apt-get install plocate valac libgee-0.8-dev diodon-dev
+      run: sudo apt-get install valac libgee-0.8-dev diodon-dev
     - name: just an echo
       run: echo "🍏 This job's status is ${{ job.status }}."
     - name: config
