@@ -30,7 +30,7 @@ jobs:
       run: ./waf configure --libdir /usr/lib/x86_64-linux-gnu/
     - name: copy missing header
       run: ls /usr/include/diodon/* && cp /usr/include/diodon/diodon.h . 
-    - name: install
+    - name: build
       run: ./waf build
     - name: install
-      run: ./waf install
+      run: sudo ./waf install
