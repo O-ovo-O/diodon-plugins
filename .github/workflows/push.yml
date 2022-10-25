@@ -32,5 +32,5 @@ jobs:
       run: ls /usr/include/diodon/* && cp /usr/include/diodon/diodon.h . 
     - name: build
       run: ./waf build
-    - name: install
-      run: sudo ./waf install
+    #- name: install
+    #  run: sudo ./waf install
