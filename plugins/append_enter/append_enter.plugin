@@ -1,0 +1,6 @@
+[Plugin]
+Module=append_enter
+Name=Append_enter
+Description=appends enter when pasting clipboard item.
+Authors=Oo-oO <XXXXXXXXX@yyyyyy.com>
+Copyright=MIT - provided it even works
