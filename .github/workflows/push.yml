@@ -34,3 +34,7 @@ jobs:
       run: ./waf build
     #- name: install
     #  run: sudo ./waf install
+    - uses: actions/upload-artifact@v3
+      with:
+        name: build-output
+        path: _build_
