@@ -1,7 +1,7 @@
 # Diodon Plugins
 This is a collection of plugins for the gnome clipboard manager Diodon.
 
-[![GitHub Actions Demo](https://github.com/O-ovo-O/diodon-plugins/actions/workflows/push.yml/badge.svg)](https://github.com/O-ovo-O/diodon-plugins/actions/workflows/push.yml)
+[![GitHub Actions Demo](https://github.com/O-ovo-O/diodon-plugins/actions/workflows/push.yml/badge.svg?branch=master)](https://github.com/O-ovo-O/diodon-plugins/actions/workflows/push.yml)
 
 - **DBus Controller**  
 Exposes Diodon api as a DBus service. Designed primarily for the Diodon [Gnome Shell extension](https://github.com/RedHatter/diodon-gnome-indictator).
